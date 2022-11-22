@@ -1,0 +1,52 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: white;
+}
+.about1
+{
+    color: maroon;
+    text-align: center;
+    margin-top: 50px;
+}
+.about-item
+{
+  color: maroon;
+  margin-top: 20px;
+  padding: 80px 30px;
+  box-shadow: 0 0 9px;
+}
+footer
+{
+    margin-top: 100px;
+}
+.btn
+{
+    background-color: #430a0a;
+    color: white;
+}
+#nav
+{
+    background-color: #430a0a;
+    color: white;
+ 
+}
+#nav ul 
+{
+   
+    background-color:#430a0a;
+  
+
+}
+#nav ul li a
+{
+    color: white;
+    background-color: #430a0a;
+    left: 70px;
+
+}

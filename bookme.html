@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book ME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bookme.css">
+    
+</head>
+<style>
+
+
+
+  *
+  {
+      margin: 0;
+      padding: 0;
+      font-family: 'poppins',sans-serif;
+      box-sizing: border-box;
+  }
+  body
+  {
+    background-color:white;
+  
+      
+  }
+  footer{
+      width: 100%;
+      position:relative;
+      top:750px;
+      bottom: 0;
+      background:linear-gradient(to right ,#430a0a,#430a0a);
+      color: white;
+      padding: 100px 0 30px;
+      border-top-left-radius: 125px;
+      font-size: 13px;
+      line-height: 20px;
+  }
+  .fa-solid
+  {
+      color: white;
+  }
+  .row
+  {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+  }
+  .col
+  {
+  flex-basis:25% ;
+  padding: 10px;
+  }
+  .col :nth-child(2),.col :nth-child(3)
+  {
+      flex-basis: 15%;
+  
+  }
+  .logo
+  {
+      width: 150px;
+      margin-bottom: 30px;
+  }
+  .col h3
+  {
+      width: fit-content;
+      margin-bottom: 40px;
+      position: relative;
+  }
+  .email-id
+  {
+  width: fit-content;
+  border-bottom: 1px solid white;
+  margin: 20px 0;
+  }
+  
+  ul li
+  {
+      list-style: none;
+      margin-bottom: 12px;
+  
+  }
+  ul li a 
+  {
+      text-decoration: none;
+    color: white;
+
+  
+  }
+  ul li a:hover
+
+  {
+    
+    color: maroon;
+  }
+  .form1
+  { padding-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid white;
+      margin-bottom: 50px ;
+  
+  
+  }
+  
+  .form1.far
+  {
+      font-size: 18px;
+      margin-right: 10px;
+  
+  }
+  .form1 input
+  {
+      width: 100%;
+      background: transparent;
+      color: white;
+      border: 0;
+      outline: none;
+  
+  
+  
+  }
+  .form1 button
+  {
+      background: transparent;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+  
+  }
+  .form1 button .fas
+  {
+      font-size: 16px;
+      color: white;
+  
+  }
+   .fa-brands 
+  {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      font-size: 25px;
+      color: white;
+      border-radius: 40px;
+      margin-right: 20px;
+      cursor: pointer;
+  }
+  hr
+  {
+      
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid white;
+      margin: 25px 0 auto;
+  
+  }
+  .copyright
+  {
+      text-align: center;
+  }
+  .underline
+  {
+      width: 100%;
+      height: 5px;
+      background:white;
+      border-radius: 3px;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      overflow: hidden;
+  }
+  .underline span
+  {
+      width: 15px;
+      height: 100%;
+      background: maroon;
+      border-radius: 3px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      animation:  moving 2s linear infinite;
+      
+  }
+  
+  @keyframes moving
+  {
+      0%
+      {
+          left: -20px;
+      }
+      100%
+      {
+          left: 100%;
+      }
+  }
+  @media( max-width:700px)
+  {
+        footer{
+          bottom: unset;
+        }
+        .col
+  {
+  flex-basis:100% ;
+  
+  }
+  .col :nth-child(2),.col :nth-child(3)
+  {
+      flex-basis: 100%;
+  
+  }
+  }
+  </style>
+<body>
+ <!-- navigation Bar -->
+ <header>
+  <nav class="navbar navbar-expand-xl" id="nav">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="Amazing Bridges (1).png " width="55%" height="60%"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"> 
+        <a class="nav-link  px-3" aria-current="page" href="index.html"> </i>Home</i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bridges</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#services">Longest</a></li>
+              <li><a class="dropdown-item" href="#services3">Tallest</a></li>
+              <li><a class="dropdown-item" href="#services2">Smallest</a></li>
+              <li><a class="dropdown-item" href="#services4">Oldest</a></li>
+
+            </ul> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bookme.html"></i>Book Me</a>
+          </li>
+          <li class="nav-item"> 
+            <a class="nav-link " aria-current="page" href="AboutUs.html">About Us</a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link " aria-current="page" href="feedback.html">Feedback</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link  px-3"  aria-current="page" href="faqs.html">FAQ'S</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  px-3"  aria-current="page" href="contactus1.html">Contactus</a>
+              </li>
+        </ul>
+     
+      </div>
+    </div>
+  </nav> 
+</header>
+  <br> 
+  <!-- nav end -->
+      <div class="conatiner">
+         <div class="row" > 
+            <div class="col-md-12">
+                 <img src="goldengate.jpg" alt="Golden Gate Bridge" class="imgbg" >
+                <div class="text-block">
+                    <h1 class="centered" >Explore,travel,love.</h1>
+                    <h6 class="centered-2" >Be inspired by a place and Book your ticket now.</h6> 
+                </div>
+            </div>
+         </div> 
+      </div>
+    <div class="container mb-3" id="book">    
+        <h1 class="h1 text-center">Book A Ticket</h1>
+            <h6 class="h1 text-center mb-5">Please Fill Your Credentials</h6>
+            <hr> 
+  <form action="bookme.html" onsubmit="return Book()">
+        <div class="row mb-3">
+        <div class="col-md-6">
+            <label class="form-label">Name: <span class="text-danger" id="nerror">*</span></label>
+            <input type="text" class="form-control" id="name">
+         </div>
+         <div class="col-md-6">
+            <label class="form-label">Select Mode: <span class="text-danger" id="moerorr">*</span></label>
+            <select id="mode" class="form-control">
+                <option>---Select Any one----</option>
+                <option>By Bus</option>
+                <option>By Train</option>
+                <option>By Aeroplane</option>
+            </select>
+        </div>
+        </div>
+        <div class="row mb-3" >
+            <div class="col-md-6">
+                <label class="form-label">No. of Persons: <span class="text-danger" id="select1error">*</span></label>
+                <select id="persons" class="form-control">
+                    <option>---Select Any one----</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+            <label class="form-label">Phone Number: <span class="text-danger" id="perror">*</span></label>
+            <input type="tel" class="form-control" id="phone">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Email: <span class="text-danger" id="eerror">*</span></label>
+               <input type="email" class="form-control" id="email">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Address: <span class="text-danger" id="aaerror">*</span></label>
+               <input type="text" class="form-control" id="address">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label">Date Of Arrival: <span class="text-danger ">*</span></label>
+               <input type="date" class="form-control" id="arrival">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Date Of Departure: <span class="text-danger ">*</span></label>
+               <input type="date" class="form-control" id="departure">
+               <span id="dateerror" class="text-danger"></span>
+            </div>
+        </div>
+    
+     <div class="row text-center my-5">
+       <div class="col-md-12">
+        <button type="submit" class="btn ">Submit</button>
+       </div>
+     </div>
+    </form>
+    </div>
+    </div>
+    
+<div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="airplane1.webp" width="100%" height="500" style="opacity: 0.7;">
+           <h1 class="headingpara">CHOOSE THE ROUTE</h1>
+           <h1 class="headingpara2">WE WILL PAVE THE WAY</h1>
+          </div>
+          <div class="carousel-item">
+            <img src="bus.jpg" width="100%" height="500" style="opacity: 0.7;">
+            <h3 class="headingpara">GET 30% OFF</h3>
+            <h2 class="headingpara2">ON EVERY BOOKING</h2>
+          </div>
+          <div class="carousel-item">
+            <img src="Ruyi-Bridge-Cina-2.jpg" width="100%" height="500" style="opacity: 0.7;">
+            <h3 class="headingbride">HAVE YOU</h3>
+            <h1 class="headingpara">BOOKED</h1>
+            <h3 class="headingbridge">YOUR</h3>
+            <h1 class="headingbr">TICKET YET ?</h1>
+            <a class="btn cccn" href="#book">BOOK NOW</a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+<!---cards-->
+<div class="container bookmecard">
+    <div class="row cardrow">
+<!--card1-->
+<div class="col-md-6 col-md-4 col-lg-4 col-xl-4">
+        <div class="card " style="width: 18rem;">
+            <img src="goldengate.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Golden Gate Bridge</h5>
+              <p class="card-text">The Golden Gate Bridge is described as the most beautiful and the most photographed bridge in the world.</p> 
+              <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span> <br> <br>
+              <a href="#book" class="btn mt-auto">BOOK NOW</a>
+            </div>
+          </div>
+        </div>
+          <!--card1-->
+          <div class="col-md-6 col-md-4 col-lg-4 col-xl-4">
+          <div class="card" style="width: 18rem;">
+              <img src="sydney harbour bridge.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sydney Harbour Bridge</h5>
+                <p class="card-text">This bridge is nicknamed "The Coathanger" because of its arch-based design, the bridge carries rail, vehicular traffic.</p>
+                <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star"></span> <br> <br>
+                <a href="#book" class="btn ">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+            <!--card1-->
+            <div class="col-md-6 col-md-4 col-lg-4 col-xl-4">
+            <div class="card" style="width: 18rem;">
+                <img src="tower bridge.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tower Bridge</h5>
+                  <p class="card-text">Tower Bridge has become a recognisable London landmark. It is sometimes confused with London Bridge,about 0.5 miles,(800 m) upstream.</p>
+                  <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star"></span>
+             <span class="fa fa-star"></span> <br> <br>
+                  <a href="#book" class="btn ">BOOK NOW</a>
+                </div>
+              </div>
+</div>              <!--card1-->
+<div class="col-md-6 col-md-4 col-lg-4 col-xl-4">
+              <div class="card" style="width: 18rem;">
+                  <img src="brooklyn-bridge-sunset-julienne-schaer__large.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Brooklyn Bridge</h5>
+                    <p class="card-text">The span was originally called the New York and Brooklyn Bridge or the East River Bridge but was officially renamed the Brooklyn Bridge in 1915. An early example of a steel-wire suspension bridge.</p>
+                    <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star"></span>
+             <span class="fa fa-star"></span> <br> <br>
+                    <a href="#book" class="btn ">BOOK NOW</a>
+                  </div>
+                </div>
+</div>
+                 <!--card1-->
+                 <div class="col-md-6 col-md-4 col-lg-4 col-xl-4">
+              <div class="card" style="width: 18rem;">
+                <img src="millauviaduct.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Millau Viaduct</h5>
+                  <p class="card-text">The bridge has been consistently ranked as one of the greatest engineering achievements of modern times.The bridge was featured in  World's Greatest Bridges. </p>
+                  <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star"></span>
+             <span class="fa fa-star"></span> <br> <br>
+                  <a href="#book" class="btn ">BOOK NOW</a>
+                </div>
+              </div>
+                 </div>
+               <!--card1-->
+               <div class="col-md-6 col-md-4 col-lg-4 col-xl-4">
+               <div class="card" style="width: 18rem;">
+                <img src="ponte-vecchio-ora-blu.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ponte Vecchio</h5>
+                  <p class="card-text">The bridge has always hosted shops and merchants who displayed their goods on tables before their premises, after authorization by the Bargello(a sort of a lord mayor).</p>
+                  <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star"></span>
+             <span class="fa fa-star"></span> <br> <br>
+                  <a href="#book" class="btn">BOOK NOW</a>
+                </div>
+              </div></div>
+    </div>
+</div>
+    
+    <script>
+        function Book()
+        { 
+            var n = (document.getElementById("name").value);
+            var p = (document.getElementById("phone").value);
+            var pr = (document.getElementById("persons").value);
+            var mo = (document.getElementById("mode").value);
+            var e = (document.getElementById("email").value);
+            var add = (document.getElementById("address").value);
+            var a =new Date(document.getElementById("arrival").value) ;
+            var d = new Date(document.getElementById("departure").value);
+            var persons = document.getElementById("persons").value;
+//alert(persons)
+
+// switch(mo)
+// {
+//     case "Bus" : 
+//     case "Train" :
+//     case "Flight" : 
+
+//     document.getElementById("moerror").innerHTML = " "  ;
+//     break;
+//     default : 
+//     document.getElementById("moerror").innerHTML = "Please select Any"  ;
+//     break;  
+// }
+
+            var namecheck = /^[a-zA-Z. ]{3,20}$/ ;
+            var phonecheck = /^[0-9]{11}$/;
+            var emailcheck =/^[a-zA-Z_\d]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z.]{2,6}$/ ;
+            var addresscheck = /^[a-zA-Z., \d]{10,500}$/;
+            if(namecheck.test(n))
+               { 
+                document.getElementById("nerror").innerHTML = "";
+               }
+               else
+               {
+                document.getElementById("nerror").innerHTML = "Your name must be 3 or more words"
+                return false;
+               }
+               switch(persons)
+{
+    case "1" : 
+    case "2" :
+    case "3" : 
+    case "4" : 
+    case "5" : 
+    document.getElementById("select1error").innerHTML = " "  ;
+    break;
+    default : 
+    document.getElementById("select1error").innerHTML = "Please select Any"  ;
+    break;  
+}
+               if(phonecheck.test(p))
+               { 
+                document.getElementById("perror").innerHTML = "";
+               }
+               else
+               {
+                document.getElementById("perror").innerHTML = "Invalid Number";
+                return false;
+               }
+               if(addresscheck.test(add))
+               { 
+                document.getElementById("aaerror").innerHTML = "";
+               }
+               else
+               {
+                document.getElementById("aaerror").innerHTML = "Invalid Address";
+                return false
+               }
+               if(emailcheck.test(e))
+               { 
+                document.getElementById("eerror").innerHTML = "";
+               }
+               else
+               {
+                document.getElementById("eerror").innerHTML = "Invalid Email";
+                return false
+               }
+               
+            if(a<=d)
+            {
+              
+            }
+            else
+            {
+                document.getElementById("dateerror").innerHTML= d + " Must be greater than or equal to " + a; 
+
+            }
+            alert("Booking Done Successfully.Thank you for choosing Amazing Bridges!");
+                  }
+
+    </script>
+    <footer>
+      <div class="row">
+        <div class="col">
+            <img src="Amazing Bridges.png" width="40%" height="40%" class="logo">
+            <p>
+                bridge, Structure that spans horizontally to allow pedestrians and vehicles to cross a void. The simplest bridge is the beam (or girder) bridge, consisting of straight, rigid beams of wood, steel, or concrete placed across a span.
+            </p>
+        </div>
+        <div class="col">
+            <h3>Location <div class="underline"><span></span></div></h3>
+            <p>Amazing Brides</p>
+            <p>Metro Star Gate</p>
+            <p>Karachi Pakistan</p>
+            <p class="email-id">Amazingbridges@gmail.com</p>
+            <h4>+92313-2532516</h4>
+        </div>
+        <div class="col">
+            <h3>Site Map<div class="underline"><span></span></div></h3>
+            <ul>
+              <li><a href="index.html"><i class="fa-solid fa-house-user">&nbsp; &nbsp;</i>Home</a></li>
+              <li><a href="AboutUs.html"><i class="fa-solid fa-address-card">&nbsp; &nbsp;</i>Aboutus</a></li>
+              <li><a href="feedback.html"><i class="fa-solid fa-comment">&nbsp; &nbsp;</i>Feedback</a></li>
+              <li><a href="bookme.html"><i class="fa-solid fa-location-dot">&nbsp; &nbsp;</i>Bookme</a></li>
+             <li> <a href="Gallery.html"> <i class="fa-regular fa-rectangle-history">&nbsp; &nbsp;</i> Gallery</a></li>
+             <li> <a href="faqs.html"> <i class="fa-solid fa-question">&nbsp; &nbsp;</i> FAQ'S</a></li>
+              <li><a href="contactus1.html"><i class="fa-solid fa-phone">&nbsp; &nbsp;</i>Contactus</a></li>
+            </ul>
+        </div>
+        <div class="col"> 
+            <h3>Social Media<div class="underline"><span></span></div> </h3>
+            <i class="fa-sharp fa-solid fa-envelope"></i>
+            <form class="form1">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div class="social-icon">
+               <a href="https://www.facebook.com" target="_blank"><i  class="fa-brands fa-facebook"></i></a> 
+               <a href="https://twitter.com/i/flow/login"target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://www.pinterest.com/search/pins/?q=bridges&rs=typed" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Amazing Bridges 2022 All Right Reserved</p>
+    </footer>
+</body>
+</html>

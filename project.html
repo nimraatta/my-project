@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazing Bridges</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css
+    ">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js
+    "></script>
+    
+  <link rel="stylesheet" href="project.css">
+ 
+   <script src="https://kit.fontawesome.com/2a744e7c71.js" crossorigin="anonymous"></script>
+
+</head> 
+<!--  -->
+<style>
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+  background-color:white;
+
+    
+}
+footer{
+    width: 100%;
+    position:relative;
+    bottom: 0;
+    background:linear-gradient(to right ,#430a0a,#430a0a);
+    color: white;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.fa-solid
+{
+    color: white;
+}
+.row
+{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col
+{
+flex-basis:25% ;
+padding: 10px;
+}
+.col :nth-child(2),.col :nth-child(3)
+{
+    flex-basis: 15%;
+
+}
+.logo
+{
+    width: 150px;
+    margin-bottom: 30px;
+}
+.col h3
+{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id
+{
+width: fit-content;
+border-bottom: 1px solid white;
+margin: 20px 0;
+}
+
+ul li
+{
+    list-style: none;
+    margin-bottom: 12px;
+
+}
+ul li a 
+{
+    text-decoration: none;
+    color: white;
+
+}
+form
+{ padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px ;
+
+
+}
+
+form.far
+{
+    font-size: 18px;
+    margin-right: 10px;
+
+}
+form input
+{
+    width: 100%;
+    background: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+
+
+
+}
+form button
+{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+}
+form button .fas
+{
+    font-size: 16px;
+    color: white;
+
+}
+ .fa-brands 
+{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    color: white;
+    border-radius: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+hr
+{
+    
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin: 25px 0 auto;
+
+}
+.copyright
+{
+    text-align: center;
+}
+.underline
+{
+    width: 100%;
+    height: 5px;
+    background:white;
+    border-radius: 3px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span
+{
+    width: 15px;
+    height: 100%;
+    background: maroon;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation:  moving 2s linear infinite;
+    
+}
+
+@keyframes moving
+{
+    0%
+    {
+        left: -20px;
+    }
+    100%
+    {
+        left: 100%;
+    }
+}
+@media( max-width:700px)
+{
+      footer{
+        bottom: unset;
+      }
+      .col
+{
+flex-basis:100% ;
+
+}
+.col :nth-child(2),.col :nth-child(3)
+{
+    flex-basis: 100%;
+
+}
+}
+</style>
+
+<body>
+
+  <!-- navigation Bar -->
+  <header>
+  <nav class="navbar navbar-expand-xl" id="nav">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="Amazing Bridges (1).png " width="55%" height="60%"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"> 
+        <a class="nav-link  px-3" aria-current="page" href="project.html"> </i>Home</i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bridges</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#services">Longest</a></li>
+              <li><a class="dropdown-item" href="#services3">Tallest</a></li>
+              <li><a class="dropdown-item" href="#services2">Smallest</a></li>
+              <li><a class="dropdown-item" href="#services4">Oldest</a></li>
+
+            </ul> 
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bookme.html"></i>Book Me</a>
+          </li>
+          <li class="nav-item"> 
+            <a class="nav-link " aria-current="page" href="AboutUs.html">About Us</a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link " aria-current="page" href="feedback.html">Feedback</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link  px-3"  aria-current="page" href="faqs.html">FAQ'S</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  px-3"  aria-current="page" href="contactus1.html">Contactus</a>
+              </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+</header>
+<br>
+  <!-- nav end -->
+  <!-- search -->
+  <form class="d-flex" id="Sh">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn " type="submit" id="bbb" >Search</button>
+  </form>
+</div>
+</div>
+<!-- slider -->
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
+   <!-- 1 --> 
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+   <img src="AdobeStock_185716578-bearb-web-e1554459869546-2559x1500.jpg"class="d-block w-100" alt="..." width="600px" height="500px" >
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Chapel Bridge</h5>
+        <p>Lucerne Switzerland <img src="Flag-Switzerland.webp" alt="" width="2%" height="2%"></p>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="carousel-item">
+      <img src="4.webp" class="d-block w-100" alt="..." width="600px" height="500px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5> Bosphorus Bridge </h5>
+        <p>TURKEY <img src="turkey2.png" stylr=""width="2%" height="2%"></p>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="carousel-item">
+      <img src="London-Tower-Bridge.jpg" class="d-block w-100" alt="..." width="600px" height="500px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5> Tower Bridge </h5>
+        <p>London England <img src="union-jack-flag-be-used-260nw-106884035.webp" alt=""  width="2%" height="2%"></p>                                             
+     </div>
+    </div>
+<!-- 4 -->
+<div class="carousel-item">
+  <img src="1000_F_459140141_czP86rALMPlkTiMhcoIJKCrP8bfk5lIa.jpg" class="d-block w-100" alt="..." width="600px" height="500px">
+  <div class="carousel-caption d-none d-md-block">
+    <h5> Rialto bridge  </h5>
+    <p>Venice Italy <img src="Flag_of_the_Republic_of_Venice.svg.png" alt="" width="2.5%"
+      height="2.5%"></p>                                             
+ </div>
+</div>
+<!-- 5 -->
+<div class="carousel-item">
+  <img src="eiffel-tower-height.jpg" class="d-block w-100" alt="..." width="600px" height="500px">
+  <div class="carousel-caption d-none d-md-block">
+    <h5> Effile Tower  </h5>
+    <p>France paris  <img src="france.png" alt="" width="2%" height="2%"></p>                                             
+ </div>
+</div>
+<!-- end img -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- End of Slider -->
+<br>  <br>
+
+                                         <!-- longest bridges -->
+        <h1 class="display-3 text-center"  id="services">LONGEST BRIDGE</h1>
+        <div class="container ">
+          <div class="row">
+           <!-- 1card -->
+           <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 ">
+            <div class="card m-5 "  style="width: 18rem;" >
+                <img src="ViaducdeMillau.jpg" width="100px" height="200px "class="card-img-top " alt="...">
+                <div class="card-body"> 
+                  <h5 class="card-title">Millau Viaduct  (France) <img src="france.png" alt="" width="15%" height="10%">  </h5>
+                  <p class="card-text mb-5"><p> The bridge is located on the rail line between Shanghai and Nanjing in Jiangsu province. It is in the Yangtze River Delta where the geography is characterised by lowland rice paddies, canals, rivers, and lakes. The bridge runs roughly parallel to the Yangtze River, about 8 to 80 km (5 to 50 mi) south of the river</p>
+                  <a href="BRIDGE(LK).pdf" class="btn mt-auto" id="btn2">   <i class="fa-solid fa-download"></i>   SEE MORE</a>
+                </div>
+            </div>
+          </div>
+                                <!-- 2card -->
+                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+ <div class="card m-5 " style="width: 18rem;">
+  <img src="CanakkaleBridge.jpeg" width="100px" height="200px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">	1915 Çanakkale Bridge (Turkey) <img src="turkey2.png" alt="" width="15%" height="10%"></h5>
+    <p class="card-text mb-5">
+      The Canakkale 1915 is a 3.7km suspension bridge being built over the Dardanelles Strait in the Canakkale province of Turkey. Located at the western end of the Marmara Sea, the bridge is expected to become the longest suspension bridge in the world, upon completion</p> 
+    <a href="bridge(L).pdf" class="btn mt-auto" id="btn2">   <i class="fa-solid fa-download"></i>   SEE MORE</a>
+  </div>
+</div> </div>
+                               <!-- 3card --> 
+                               <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+<div class="card m-5" style="width: 18rem;">
+  <img src="Pingtang Bridge.jpeg" width="100px"  height="200px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"> Pingtang Bridge (China) <img src="china.png" alt="" width="15%" height="10%"> </h5>
+    <p class="card-text mb-5">The Pingtang Bridge is a bridge in Pingtang, Guizhou, China and carries the Pingtang Luodian Expressway over the deep Caodu River valley. With a height of 332 metres, it is the third-tallest bridge in the world. It was opened to traffic on 30 December 2019</p>
+    <a href="BRIDGE(LO).pdf" class="btn mt-auto" id="btn2"  >   <i class="fa-solid fa-download"></i>   SEE MORE</a>
+  </div>
+</div>
+</div>
+
+                                                   <!-- longest bridge close -->
+
+
+
+
+
+
+                                                     <!-- SMALLEST BRIDGE -->
+        <h1 class="display-3 text-center"  id="services2">SMALLEST BRIDGE</h1>
+        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">                 
+  <!-- card1 -->
+  <div class="card m-5" style="width: 18rem;">
+    <img src="ufo-tower.jpg" width="100px"  height="200px" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Bratislava UFO(Bratislava, Slovakia) <img src="Flag-Slovakia.webp" alt="15%" width="10%"></h5>
+      <p class="card-text mb-5">Most SNP, commonly referred to as Most Slovenského národného povstania or the UFO Bridge, and named Nový most from 1993 to 2012, is a road bridge over the Danube in Bratislava, the capital of Slovakia. It is the world's longest bridge to have one pylon and one cable-stayed plane</p>
+      <a href="bridge(S).pdf" class="btn mt-auto" id="btn2">  <i class="fa-solid fa-download"></i>   SEE MORE</a>
+    </div>
+  </div>
+  </div>
+  <!-- card 2 -->
+  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="card m-5" style="width: 18rem;">
+    <img src="pingtang-bridge-guizhou-traffic-xinhua.jpg" width="100px"  height="200px" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">A Ponte da Ajud (spain)<img src="Flag-Spain.webp" alt="" width="15%" height="10%"> </h5>
+      <p class="card-text mb-5">The bridge’s construction dates back to 1510 and as early as 1597 two of the central arches collapsed due to heavy flooding of the river. In 1641, it was repaired and raised platforms were installed to replace the damaged arches, but in 1646 the Castilian army destroyed the bridge
+        </p>
+      <a href="bridge(s) 1.pdf" class="btn mt-auto" id="btn2">   <i class="fa-solid fa-download"></i>   SEE MORE</a>
+    </div>
+  </div>
+  </div>
+  <!-- card3 --> 
+  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="card m-5" style="width: 18rem;">
+    <img src="Somerset Bridge.jpg" width="100px"  height="200px" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> Somerset Bridge(Bermuda) <br><img src="download.png" alt="" width="15%" height="10%"></h5>
+      <p class="card-text mb-5">Somerset Bridge is a small bridge in Bermuda connecting Somerset Island with the mainland in the western parish of Sandys, Somerset Bridge is reputedly the smallest working drawbridge in the world. It crosses a small channel connecting the Great Sound with Ely's Harbour</p>
+      <a href="bridge(s) 2.pdf" class="btn mt-auto" id="btn2">  <i class="fa-solid fa-download"></i>   SEE MORE</a>
+    </div>
+  </div>
+  </div>
+                                         <!-- close -->
+                                           <!--tallest  -->
+                  <h1 class="display-3 text-center"  id="services3">TALLEST BRIDGE</h1>
+      <!-- card1 -->
+      <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="card m-5" style="width: 18rem;">
+    <img src="chenab-bridge.webp" width="100px"  height="200px" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Chenab Rail Bridge(jammu kashmir)<img src="Flag_of_Azad_Kashmir.svg.png" alt="" width="15%" height="10%"> </h5>
+      <p class="card-text mb-5">
+        The Chenab Rail Bridge is a steel and concrete arch bridge between Bakkal and Kauri and just 42 km from main Reasi town in the Reasi district of Jammu and Kashmir, India. The bridge spans the Chenab River at a height of 359 m above the river, making it the world's highest rail bridge.</p>
+      <a href="bridge(t).pdf" class="btn mt-auto" id="btn2"> <i class="fa-solid fa-download"></i>   SEE MORE</a>
+    </div>
+  </div>
+</div>
+  <!-- card 2 -->
+  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="card m-5" style="width: 18rem;">
+    <img src="Burj-Khalifa-and-Dubai-skyline.webp" width="100px"  height="200px" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">burj Khalifa (UAE) <br><img src="UA.jpg" alt="" width="15%" height="10%"> </h5>
+      <p class="card-text mb-5">The Burj Khalifa Tower), known as the Burj Dubai prior to its inauguration in 2010, is a skyscraper in Dubai, United Arab Emirates. It is known for being the world’s tallest building. With a total height of 829.8 m (2,722 ft, or just over half a mile) and a roof height (excluding antenna, but including a 223 m spire[2]) of 828 m (2,717 ft)</p>
+      <a href="bridge(t) 1.pdf" class="btn mt-auto" id="btn2"> <i class="fa-solid fa-download"></i>   SEE MORE</a>
+    </div>
+  </div>
+</div>
+  <!-- card3 --> 
+  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+  <div class="card m-5" style="width: 18rem;">
+    <img src="eiffel-tower-height.jpg" width="100px"  height="200px" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Eiffel Tower(France paris)<img src="download (1).png" alt="" width="15%" height="10%"> </h5>
+      <p class="card-text mb-5">The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower. Locally nicknamed "La dame de fer", it was constructed from 1887 to 1889 as the centerpiece of the 1889 World's Fair the hight of effil tower is almost 1,083 feet</p>
+      <a href="bridge(t) 2.pdf" class="btn mt-auto" id="btn2"> <i class="fa-solid fa-download"></i>   SEE MORE</a>
+    </div>
+  </div>       
+</div>                                   
+
+                                       <!-- close -->
+ 
+                                                  <!--OLDEST --> 
+  <h1 class="display-3 text-center"  id="services4">OLDEST BRIDGE</h1>
+  <!-- card1 -->
+  <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+<div class="card m-5" style="width: 18rem;">
+<img src="download (1).jpg" width="100px"  height="200px" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Tarr Steps(England)<img src="Flag-England.webp" alt="" width="15%" height="10%"> </h5>
+  <p class="card-text mb-5">The Tarr Steps is a clapper bridge across the River Barle in the Exmoor National Park, Somerset, England.[1] They are located in a national nature reserve about 2.5 miles (4 km) south east of Withypool and 4 miles (6 km) north west of Dulverton.
+    A typical clapper bridge construction, the bridge's listing assesses it as medieval in origin. The stone slabs weigh up to two tons each. The bridge is 180 feet (55 m) long and has 17 spans.[2] It has been designated by English Heritage as a grade I listed building and scheduled monument.
+   </p>
+  <a href="bridge(o)england.pdf" class="btn mt-auto" id="btn2"> <i class="fa-solid fa-download"></i>   SEE MORE</a>
+</div>
+</div>
+</div>
+
+<!-- card 2 -->
+<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+<div class="card m-5" style="width: 18rem;">
+<img src="images (3).jpg" width="100px"  height="200px" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Bridge near Limyra(Turkey) <br> <img src="turkey2.png" alt="" width="15%" height="10%"> </h5>
+  <p class="card-text mb-5">The Bridge near Limyra is a relatively unknown, yet unique stone bridge it is believed to be one of the oldest segmented arch bridges in the world. The bridge is located near the ancient city of Limyra and is the largest civil engineering structure of antiquity in the region.</p>
+  <a href="bridge(o)turkey (1).pdf" class="btn mt-auto" id="btn2"> <i class="fa-solid fa-download"></i>   SEE MORE</a>
+</div>
+</div>
+</div>
+<!-- card3 --> 
+<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+<div class="card m-5" style="width: 18rem;">
+<img src="alcantara-bridge.jpg" width="100px"  height="200px" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Arkadiko Bridge<img src="Flag_of_Greece.svg.png" alt="" width="15%" height="10%"> </h5>
+  <p class="card-text mb-5">The Arkadiko Bridge or Kazarma Bridge is a Mycenaean bridge near the modern road from Tiryns to Epidauros on the Peloponnese, Greece. Dating to the Greek Bronze Age, it is one of the oldest arch bridges still in existence and use today and the oldest preserved bridge in Europe.
+  </p>
+  <a href="bridge(o)Greece.pdf" class="btn mt-auto" id="btn2"> <i class="fa-solid fa-download"></i>   SEE MORE</a>
+</div>
+</div>   
+</div>                                  
+</div>
+</div>   
+<!-- close -->
+<!-- footer -->
+<footer>
+  <div class="row">
+    <div class="col">
+        <img src="Amazing Bridges.png" width="40%" height="40%" class="logo">
+        <p>
+            bridge, Structure that spans horizontally to allow pedestrians and vehicles to cross a void. The simplest bridge is the beam (or girder) bridge, consisting of straight, rigid beams of wood, steel, or concrete placed across a span.
+        </p>
+    </div>
+    <div class="col">
+        <h3>Location <div class="underline"><span></span></div></h3>
+        <p>Amazing Brides</p>
+        <p>Metro Star Gate</p>
+        <p>Karachi Pakistan</p>
+        <p class="email-id">Amazingbridges@gmail.com</p>
+        <h4>+92313-2532516</h4>
+    </div>
+    <div class="col">
+        <h3>Site Map<div class="underline"><span></span></div></h3>
+        <ul>
+            <li><a href=""><i class="fa-solid fa-house-user"></i>Home</a></li>
+            <li><a href=""><i class="fa-solid fa-address-card"></i>Aboutus</a></li>
+            <li><a href=""><i class="fa-solid fa-comment"></i>Feedback</a></li>
+            <li><a href=""><i class="fa-solid fa-location-dot"></i>Bookme</a></li>
+            <li><a href=""><i class="fa-solid fa-phone"></i>Contactus</a></li>
+        </ul>
+    </div>
+    <div class="col"> 
+        <h3>Social Media<div class="underline"><span></span></div> </h3>
+        <i class="fa-sharp fa-solid fa-envelope"></i>
+        <form>
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+        <div class="social-icon">
+           <a href="https://www.facebook.com" target="_blank"><i  class="fa-brands fa-facebook"></i></a> 
+           <a href="https://twitter.com/i/flow/login"target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.pinterest.com/search/pins/?q=bridges&rs=typed" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+    </div>
+  </div>
+  <hr>
+  <p class="copyright">Amazing Bridges 2022 All Right Reserved</p>
+</footer>                                                         
+
+</body>
+</html>

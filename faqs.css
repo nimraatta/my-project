@@ -1,0 +1,66 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: wheat;
+    color: maroon;
+}
+#nav
+{
+    background-color: #430a0a;
+    color: white;
+ 
+}
+#nav ul 
+{
+   
+    background-color:#430a0a;
+  
+
+}
+#nav ul li a:hover
+{
+    background-color: white;
+    color: maroon;
+}
+#nav ul li a
+{
+    color: white;
+    background-color: #430a0a;
+    left: 70px;
+
+}
+.accordion-item
+{
+    background-color: white;
+    
+}
+.accordion-body
+{
+    background-color: #430a0a;
+    color: wheat;
+}
+.accordion-button
+{
+    background-color: #430a0a;
+    color: wheat;
+}
+
+.accordian-collapse
+{
+    background-color: wheat;
+}
+/* .accordion-header::after
+{
+    background-color: wheat;
+}  */
+.lead a
+{
+  text-decoration: none;
+  color: maroon;
+  font-weight: 500;
+}

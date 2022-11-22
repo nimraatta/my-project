@@ -1,0 +1,51 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img
+{
+    margin-left: 10px;
+}
+.heading
+{
+    color: maroon;
+}
+.lead
+{
+    color: maroon;
+}
+.fom
+{
+    background-color: maroon;
+    color: wheat;
+}
+#nav
+{
+    background-color: maroon;
+    color: white;
+ 
+}
+#nav ul 
+{
+   
+    background-color: maroon;
+  
+
+}
+#nav ul li a
+{
+    color: white;
+    background-color: maroon;
+    left: 70px;
+
+}
+.btn
+{
+    background-color: wheat;
+}
+.btn-link
+{
+    color: maroon;
+}

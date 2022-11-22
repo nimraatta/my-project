@@ -1,0 +1,56 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#nav
+{
+    background-color: #430a0a;
+    color: white;
+ 
+}
+.head1
+{
+    text-align: center;
+}
+body
+{
+    background-color:white;
+}
+.btn
+{
+    background-color: white;
+    color: #430a0a
+}
+#nav ul 
+{
+   
+    background-color: #430a0a;
+  
+
+}
+#nav ul li a
+{
+    color: white;
+    background-color: #430a0a;
+    left: 70px;
+
+}
+.btn
+{
+ background-color: #430a0a;
+ color: white;
+}
+#services
+{
+   text-transform: capitalize ;
+   color: black 50px ;
+}
+#btn2
+{
+       
+    background-color: #430a0a;
+    color: white;
+}
+

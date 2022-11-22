@@ -1,0 +1,45 @@
+body
+{
+    background-color: white;
+    color: maroon;
+}
+#nav
+{
+    background-color: #430a0a;
+    color: white;
+ 
+}
+#nav ul 
+{
+   
+    background-color: #430a0a;
+  
+
+}
+#nav ul li a
+{
+    color: white;
+    background-color: #430a0a;
+    left: 70px;
+
+}
+.container
+{
+    border: 2px solid #430a0a;
+    box-shadow: 0 0 9px;
+}
+.form-control
+{
+    border-color: #430a0a;
+    background-color: white;
+}
+.btn
+{
+    background-color: #430a0a;
+    color:white;
+}
+.btn:hover
+{
+    background-color: white;
+    color: maroon;
+}

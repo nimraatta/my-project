@@ -1,0 +1,73 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    display: flex;
+    background-color: wheat;
+    
+
+}
+.btn
+{
+    background-color: maroon;
+  
+}
+ul a
+{
+    color: white;
+}
+#main
+{
+  text-align: center;
+}
+/* navbar css */
+#nav
+{
+    background-color: maroon;
+    /* col/or: white; */
+    width: 100%;
+    height: 80px; 
+}
+.navbar-brand
+{
+    /* border: 1px solid white; */
+    width: 20%;
+    height: 50px;
+}
+#navbarSupportedContent
+{
+    /* border: 1px solid white; */
+    width: 20%;
+}
+.navbar-nav
+{
+    /* border: 1px solid white; */
+    position: relative;
+    left: 300px;
+}
+#nav ul li a
+{
+    color: white;
+    background-color: maroon;
+
+}
+.btn1
+{
+
+ background-color: maroon;
+ color: white;
+
+}
+hr
+{
+ width: 100%;
+ color: maroon;
+}
+.slider
+{
+    text-align: center;
+}
